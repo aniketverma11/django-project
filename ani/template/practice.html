@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice page</title>
+</head>
+<style>
+    h1{
+        color: rgb(212, 172, 28);
+        font-family:fantasy;
+        margin: auto;
+        width:60%;
+        border: 3px solid #73AD21;
+        padding: 10px;
+        text-align: center;
+
+    }
+</style>
+<body bgcolor="cian">
+    <b><h1>This is Practice page</h1></b> 
+    <form method="POST" action="practice2">
+        {% csrf_token %}
+        <textarea name="text" rows="25" cols="100"></textarea><br>
+        <input type="submit">  
+
+    </form>   
+</body>
+</html>

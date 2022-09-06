@@ -1,0 +1,21 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+<h1>"I Love You! and age is {{age}}"</h1>
+<form action="add" method="post">
+    {% csrf_token %}
+    Enter the val1: <input type="number" name="num1"><br>
+    Enter the val2: <input type="number" name="num2"><br>
+    
+
+    <input type="submit">
+
+
+
+</form>
+
+
+{% endblock content %}
+
+
